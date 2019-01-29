@@ -1,0 +1,18 @@
+# Datasource configuration
+server:
+  port: 8080
+  servlet:
+    context-path: /pizzeria
+
+spring:
+  datasource:
+    username: postgres
+    password: BuSI
+    url: jdbc:postgresql://localhost:5432/pizzeriadb1
+  jpa:
+    database: POSTGRESQL
+    generate-ddl: true
+    hibernate.ddl-auto: update
+    show-sql: true
+    dialect: org.hibernate.dialect.PostgreSQL9Dialect
+    properties.hibernate.temp.use_jdbc_metadata_defaults: false
